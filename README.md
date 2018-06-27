@@ -1,14 +1,18 @@
-# Project Title
+# API T-book
 
-One Paragraph of project description goes here
+The T-book API allows clients to access and modify their data on the T-book platform.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will help you to use our API.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Before getting started, you will to get ahold of your identifiers : 
+
+* Login to your [T-book client account](https://t-book.fr)
+* Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ```
 Give examples
