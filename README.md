@@ -1,10 +1,10 @@
-# T-book API
+# T-book Web Service API
 
-The T-book API allows clients to access and modify their data on the T-book platform.
+Our web service API provides users with fast and reliable access to your T-book data. You can use the T-book Web Service API to retrieve and manage T-book content.
 
 ## Getting Started
 
-These instructions will help you to use our API.
+These instructions will help you to access our Web Service API.
 
 ### Prerequisites
 
