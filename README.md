@@ -1,4 +1,4 @@
-# API T-book
+# T-book API
 
 The T-book API allows clients to access and modify their data on the T-book platform.
 
@@ -12,7 +12,7 @@ Before getting started, you will to get ahold of your identifiers :
 
 * Login to your [T-book client account](https://t-book.fr)
 * Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* There, you will see your client ID, and be able to generate your client secret. WARNING : you will only be able to see your client secret this one time! Store precautiously and confidentially your identifiers, you will need them in all your requests to the API. You will however be able to regenerate your client secret if needed.
 
 ```
 Give examples
