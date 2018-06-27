@@ -4,15 +4,16 @@ Our web service API provides users with fast and reliable access to your T-book 
 
 ## Getting Started
 
-These instructions will help you to access our Web Service API.
+This section describes how to access our Web Service API.
 
 ### Prerequisites
 
-Before getting started, you will to get ahold of your identifiers : 
+First, you need to generate your API credentials : 
 
 * Login to your [T-book client account](https://t-book.fr)
 * Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
-* There, you will see your client ID, and be able to generate your client secret. WARNING : you will only be able to see your client secret this one time! Store precautiously and confidentially your identifiers, you will need them in all your requests to the API. You will however be able to regenerate your client secret if needed.
+* There, you will find your client ID, and be able to generate your client secret. **WARNING : you will only be able to see your client secret this one time!** Store precautiously your credentials, they will be needed in any request to the API. You will however be able to regenerate your client secret if needed.
+> Note : Your client secret is confidential. Avoid storing it in plain text. 
 
 ```
 Give examples
