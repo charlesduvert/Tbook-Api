@@ -12,7 +12,7 @@ First, you need to generate your API credentials :
 
 * Login to your [T-book client account](https://t-book.fr)
 * Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
-* There, you will find your client ID, and be able to generate your client secret. **BEWARE : you will only be able to see your client secret this one time!** Store precautiously your credentials, they will be needed in any request to the API. You will however be able to regenerate your client secret if needed.
+* On the API page of your account, you will find your client ID, and be able to generate your client secret. **BEWARE : you will only be able to see your client secret this one time!** Store precautiously your credentials, they will be needed in any request to the API. You will however be able to regenerate your client secret if needed.
 > Note : Your client secret is confidential. Avoid storing it in plain text. 
 
 ```
