@@ -18,7 +18,7 @@ First, you need to generate your API credentials :
 
 > Note : Your client secret is confidential. Avoid storing it in plain text. 
 
-### Endpoints
+### Endpointss
 
 All your requests should be sent 
 
