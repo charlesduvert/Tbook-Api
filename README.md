@@ -1,36 +1,28 @@
-# Project Title
+# T-book Web Service API
 
-One Paragraph of project description goes here
+Our web service API provides users with fast and reliable access to your T-book data. You can use the T-book Web Service API to retrieve and manage T-book content.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This section describes how to access our Web Service API.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+First, you need to generate your API credentials : 
 
-```
-Give examples
-```
+* Login to your T-book client account
+  - [Test platform] (https://test.t-book.fr)
+  - [Prod platform] (https://t-book.fr)
+* Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
+* On the API page of your account, you will find your client ID, and be able to generate your client secret. **BEWARE : you will only be able to see your client secret this one time!** Store precautiously your credentials, they will be needed in any request to the API. You will however be able to regenerate your client secret if needed.
 
-### Installing
+> Note : Your client secret is confidential. Avoid storing it in plain text. 
 
-A step by step series of examples that tell you how to get a development env running
+### Endpoints
+
+All your requests should be sent 
 
 Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
