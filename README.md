@@ -37,6 +37,16 @@ curl -X POST /token \
   -F client_id= Your_Client_Id \
   -F client_secret= Your_Client_Secret \
 ```
+### Response ###
+
+A successful token response may look like the following
+```
+{
+  "access_token":"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3",
+  "token_type":"bearer",
+  "expires_in":3600,
+}
+```
 
 ### Break down into end to end tests
 
