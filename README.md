@@ -11,8 +11,8 @@ This section describes how to access our Web Service API.
 First, you need to generate your API credentials : 
 
 * Login to your T-book client account
-  - [Test platform] (https://test.t-book.fr)
-  - [Live platform] (https://t-book.fr)
+  - [Test platform](https://test.t-book.fr)
+  - [Live platform](https://t-book.fr)
 * Go to the API section. If you can't find this section, please [contact us](mailto:alban.miconnet@digitaluniversity.education), we will have to grant you access. 
 * On the API page of your account, you will find your client ID, and be able to generate your client secret. **BEWARE : you will only be able to see your client secret this one time!** Store precautiously your credentials, they will be needed in any request to the API. You will however be able to regenerate your client secret if needed.
 
@@ -24,9 +24,17 @@ All paths in the documentation are relative to the base API url.
 * **Test mode** : xxx
 * **Live mode** : xxx
 
-## Running the tests
+## Authentication
 
-Explain how to run the automated tests for this system
+The access to the API is private. Therefore, you need to provide a JSON Web Token (JWT) as a mean of authentication. Tokens can be obtained by using the token endpoint with your API credentials.
+
+**Request**
+```
+curl -X POST /token \
+  -F grant_type=client_credential \
+  -F client_id= *Your_Client_Id*\
+  -F client_secret= Your_Client_Secret\
+```
 
 ### Break down into end to end tests
 
