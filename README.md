@@ -20,7 +20,7 @@ First, you need to generate your API credentials :
 
 ### Endpoints
 
-All your requests should be sent 
+All your requests should be sent to 
 
 Say what the step will be
 
