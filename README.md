@@ -29,6 +29,7 @@ All paths in the documentation are relative to the base API url.
 The access to the API is private. Therefore, you need to provide a JSON Web Token (JWT) as a mean of authentication. Tokens can be obtained by using the token endpoint with your API credentials.
 
 **Request**
+
 Replace your Client ID and Client Secret with your credentials
 ```
 curl -X POST /token \
