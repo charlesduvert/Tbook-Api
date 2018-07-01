@@ -1,5 +1,5 @@
 # T-book Web Service API
-[test ancre](#test-ancre)
+[Purpose](#purpose)
 
 Our web service API provides users with fast and reliable access to your T-book data. You can use the T-book Web Service API to retrieve and manage T-book content.
 
@@ -75,4 +75,4 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 | 500, 502, 503, 504 | server_errors	| Something went wrong on our end. |
 
 ## Methods
-###test ancre
+## Purpose
