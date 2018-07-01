@@ -47,6 +47,31 @@ A successful token response may look like the following
   "expires_in":3600,
 }
 ```
+## Error codes
+
+Our API uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the 2xx range indicate success. Codes in the 4xx range indicate an error that failed given the information provided (e.g., a required parameter was omitted, etc.). Codes in the 5xx range indicate an error with our servers (seldom).
+
+```json
+{
+  "error": {
+    "code": "code",
+    "message": "message"
+  }
+}
+```
+
+| HTTP status | Code | Description |
+| - | - | - |
+| 200 | ok | Everything worked as expected. |
+| 400 | bad_request |	The request was unacceptable, often due to missing a required parameter. |
+| 401 | unauthorized | No valid API key provided. |
+| 402 | request_failed | The parameters were valid but the request failed. |
+| 403 | forbidden | The requested data is not accessible to you. |
+| 404 | not_found | The requested resource doesn't exist. |
+| 405 | method_not_allowed | The HTTP method used isn't supported for this endpoint. |
+| 409 | conflict	| The request conflicts with another request (perhaps due to using the same idempotent key). |
+| 429 | too_many_requests |	Too many requests hit the API too quickly. We recommend an exponential backoff of your requests. |
+| 500, 502, 503, 504 | server_errors	| Something went wrong on our end. |
 
 ### Break down into end to end tests
 
