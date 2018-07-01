@@ -32,7 +32,7 @@ The access to the API is private. Therefore, you need to provide a JSON Web Toke
 ```
 curl -X POST /token \
   -F grant_type=client_credential \
-  -F client_id= *Your_Client_Id*\
+  -F client_id= Your_Client_Id\
   -F client_secret= Your_Client_Secret\
 ```
 
