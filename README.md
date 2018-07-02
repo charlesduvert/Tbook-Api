@@ -75,4 +75,9 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 
 ## Methods
 [Purpose](#purpose)
-## Purpose
+
+## Client & Entity
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales purus non lectus pulvinar, a egestas risus commodo. Proin interdum eros sagittis, aliquam nunc et, pharetra mauris.
+
+
