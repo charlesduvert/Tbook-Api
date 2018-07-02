@@ -74,9 +74,9 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 | 500, 502, 503, 504 | server_errors	| Something went wrong on our end. |
 
 ## Methods
-[Purpose](#purpose)
+[Client & Entities](#Client & Entities)
 
-## Client & Entity
+## Client & Entities
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales purus non lectus pulvinar, a egestas risus commodo. Proin interdum eros sagittis, aliquam nunc et, pharetra mauris.
 
@@ -85,9 +85,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales pu
 ### Create new Entity ###
 
 ### Get All Entities informations ###
+```
+curl -X GET /getEntity \
+  -H 'authorization: Bearer Your_jwt_token' \
+```
 
 ### Get one Entity information ###
-
+```
+curl -X GET /getEntity/:entityID \
+  -H 'authorization: Bearer Your_jwt_token' \
+```
 
 
 
