@@ -81,8 +81,13 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales purus non lectus pulvinar, a egestas risus commodo. Proin interdum eros sagittis, aliquam nunc et, pharetra mauris.
 
 ### Get Client informations ###
+```
+curl -X GET /getClient \
+  -H 'authorization: Bearer Your_jwt_token' \
+```
 
 ### Create new Entity ###
+You can do this action now
 
 ### Get All Entities informations ###
 ```
