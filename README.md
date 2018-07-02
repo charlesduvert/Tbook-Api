@@ -21,8 +21,8 @@ First, you need to generate your API credentials :
 ### Endpoints
 
 All paths in the documentation are relative to the base API url. 
-* **Test mode** : xxx
-* **Live mode** : xxx
+* **Test mode** : https://test.t-book.fr/api
+* **Live mode** : https://t-book.fr/api
 
 ## Authentication
 
