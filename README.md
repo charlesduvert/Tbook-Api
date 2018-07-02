@@ -87,7 +87,7 @@ curl -X GET /getClient \
 ```
 
 ### Create new Entity ###
-You can do this action now
+You can't do this action now
 
 ### Get All Entities informations ###
 ```
