@@ -74,7 +74,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 | 500, 502, 503, 504 | server_errors	| Something went wrong on our end. |
 
 ## Methods
-[Client & Entities](#Client & Entities)
+[Client & Entities](#Client_&_Entities)
 
 ## Client & Entities
 
