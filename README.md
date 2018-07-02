@@ -78,27 +78,27 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 
 ## Client & Entities
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales purus non lectus pulvinar, a egestas risus commodo. Proin interdum eros sagittis, aliquam nunc et, pharetra mauris.
+All resources (student, courses etc.) are attached to an entity. The client can administrate its entities. The client can have one or several entities. 
 
-### Get Client informations ###
+### Get Client information ###
 ```
 curl -X GET /getClient \
-  -H 'authorization: Bearer Your_jwt_token' \
+  -H 'authorization: Bearer your_access_token' \
 ```
 
 ### Create new Entity ###
-You can't do this action now
+Not yet available
 
-### Get All Entities informations ###
+### Get All Entities information ###
 ```
 curl -X GET /getEntities \
-  -H 'authorization: Bearer Your_jwt_token' \
+  -H 'authorization: Bearer your_access_token' \
 ```
 
 ### Get one Entity information ###
 ```
 curl -X GET /getEntity/:entityID \
-  -H 'authorization: Bearer Your_jwt_token' \
+  -H 'authorization: Bearer your_access_token' \
 ```
 
 
