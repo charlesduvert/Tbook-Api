@@ -91,7 +91,7 @@ You can't do this action now
 
 ### Get All Entities informations ###
 ```
-curl -X GET /getEntity \
+curl -X GET /getEntities \
   -H 'authorization: Bearer Your_jwt_token' \
 ```
 
