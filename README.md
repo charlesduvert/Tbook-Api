@@ -178,7 +178,8 @@ curl -X GET /getAllLearners/:entityID \
 		"phone": "+33600000000",
 		"filter": ["Session 1", "May 2018"],
 		"location": ["Paris"],
-		"country": ["France"]
+		"country": ["France"],
+		"testUser":0
 	},
 	...
 ]
@@ -207,8 +208,10 @@ curl -X GET /getOneLearner/:learnerID \
 	"phone": "+33600000000",
 	"filter": ["Session 1", "May 2018"],
 	"location": ["Paris"],
-	"country": ["France"]
+	"country": ["France"],
+	"testUser":0
 }
 ```
+### Insert a learner ###
 
 
