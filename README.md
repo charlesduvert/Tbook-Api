@@ -75,6 +75,10 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 
 ## Methods
 [Client & Entities](#client--entities)
+	[Get client attributes](#get-client-attributes)
+	[Create new entity](#create-new-entity)
+	[Get all entities attributes](#get-all-entities-attributes)
+	[Get one entity attributes](#get-one-entity-attributes)
 
 ## Client & Entities
 
@@ -138,6 +142,11 @@ curl -X GET /getEntity/:entityID \
 	"language":"FR"
 }
 ```
+## Learner
+
+Learners are attached to one entity and one client.
+
+### Get all learners attributes ###
 
 
 
