@@ -87,7 +87,14 @@ curl -X GET /getClient \
 ```
 **Response example**
 ```JSON
-{"name":"Client Name","logo":"path/logo.jpg","description":"Nam ut risus a velit lobortis egestas convallis at dolor","city":"Paris","address":"2 avenue de Gaulles","zip":"75003"}
+{
+  "name":"Client Name",
+  "logo":"path/logo.jpg",
+  "description":"Nam ut risus a velit lobortis egestas convallis at dolor",
+  "city":"Paris",
+  "address":"2 avenue Charles de Gaulle",
+  "zip":"75008"
+}
 ```
 
 ### Create new Entity ###
