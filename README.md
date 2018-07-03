@@ -85,6 +85,10 @@ All resources (student, courses etc.) are attached to an entity. The client can 
 curl -X GET /getClient \
   -H 'authorization: Bearer your_access_token' \
 ```
+**Response example**
+```JSON
+{"name":"Client Name","logo":"path/logo.jpg","description":"Nam ut risus a velit lobortis egestas convallis at dolor","city":"Paris","address":"2 avenue de Gaulles","zip":"75003"}
+```
 
 ### Create new Entity ###
 Not yet available
