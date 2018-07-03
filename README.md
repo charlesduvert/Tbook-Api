@@ -163,6 +163,7 @@ curl -X GET /getAllLearners/:entityID \
 [
 	{
 		"learnerID": "1",
+		"login" : "login@email.fr",
 		"entity": {
 			"entityID":"24",
 			"entityName":"Entity n°1"
@@ -193,6 +194,7 @@ curl -X GET /getOneLearner/:learnerID \
 ```
 {
 	"learnerID": "1",
+	"login" : "login@email.fr",
 	"entity": {
 		"entityID":"24",
 		"entityName":"Entity n°1"
