@@ -163,7 +163,10 @@ curl -X GET /getAllLearners/:entityID \
 [
 	{
 		"learnerID": "1",
-		"entityID": "24",
+		"entity": {
+			"entityID":"24",
+			"entityName":"Entity n°1"
+		},
 		"civility": "m",
 		"lastname": "Doe",
 		"firstname": "John",
