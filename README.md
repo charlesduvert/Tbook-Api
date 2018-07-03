@@ -80,7 +80,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 
 All resources (student, courses etc.) are attached to an entity. The client can administrate its entities. The client can have one or several entities. 
 
-### Get Client information ###
+### Get client attributes ###
 ```
 curl -X GET /getClient \
   -H 'authorization: Bearer your_access_token' \
@@ -97,10 +97,10 @@ curl -X GET /getClient \
 }
 ```
 
-### Create new Entity ###
+### Create new entity ###
 Not yet available
 
-### Get All Entities information ###
+### Get all entities attributes ###
 ```
 curl -X GET /getEntities \
   -H 'authorization: Bearer your_access_token' \
@@ -121,10 +121,22 @@ curl -X GET /getEntities \
 ]
 ```
 
-### Get one Entity information ###
+### Get one entity attributes ###
 ```
 curl -X GET /getEntity/:entityID \
   -H 'authorization: Bearer your_access_token' \
+```
+**Response example**
+```
+{
+	"entityID":"24",
+	"name":"Entity Name",
+	"description":"Nam ut risus a velit lobortis egestas convallis at dolor",
+	"address":"2 avenue Charles de Gaulle",
+	"city":"Paris",
+	"zip":"75008",
+	"language":"FR"
+}
 ```
 
 
