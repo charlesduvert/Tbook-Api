@@ -215,5 +215,26 @@ curl -X GET /getOneLearner/:learnerID \
 }
 ```
 ### Insert a learner ###
-
+```
+curl -X POST /insertLearner \
+  -H 'authorization: Bearer your_access_token' \
+  -F entityID=24 \
+  -F login=login2@api.fr \
+  -F password=1F0k7h6g \
+  -F civility=mme \
+  -F lastname=Doe \
+  -F firstname=Jane \
+  -F code=23563 \
+  -F 'jobTitle=Communication Manager' \
+  -F seniority=3 \
+  -F level=Master \
+  -F 'contactEmail[0]=contact@gmail.fr' \
+  -F 'contactEmail[1]=contact2@gmail.fr' \
+  -F 'phone=+33600000000' \
+  -F 'filter[0]=Session 1' \
+  -F 'filter[1]=May 2018' \
+  -F 'location[0]=Paris' \
+  -F 'country[0]=France' \
+  -F testUser=0
+```
 
