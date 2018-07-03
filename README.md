@@ -75,16 +75,16 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 
 ## Methods
 [Client & Entities](#client--entities)
-	[Get client attributes](#get-client-attributes)
+	[Get client](#get-client)
 	[Create new entity](#create-new-entity)
-	[Get all entities attributes](#get-all-entities-attributes)
-	[Get one entity attributes](#get-one-entity-attributes)
+	[Get all entities](#get-all-entities)
+	[Get one entity](#get-one-entity)
 
 ## Client & Entities
 
 All resources (student, courses etc.) are attached to an entity. The client can administrate its entities. The client can have one or several entities. 
 
-### Get client attributes ###
+### Get client ###
 ```
 curl -X GET /getClient \
   -H 'authorization: Bearer your_access_token' \
@@ -104,7 +104,7 @@ curl -X GET /getClient \
 ### Create new entity ###
 Not yet available
 
-### Get all entities attributes ###
+### Get all entities ###
 ```
 curl -X GET /getEntities \
   -H 'authorization: Bearer your_access_token' \
@@ -125,7 +125,7 @@ curl -X GET /getEntities \
 ]
 ```
 
-### Get one entity attributes ###
+### Get one entity ###
 ```
 curl -X GET /getEntity/:entityID \
   -H 'authorization: Bearer your_access_token' \
@@ -144,9 +144,42 @@ curl -X GET /getEntity/:entityID \
 ```
 ## Learner
 
-Learners are attached to one entity and one client.
+Learners are attached to one entity.
 
-### Get all learners attributes ###
+### Get all learners ###
+
+To retrieve all the learners of a client
+```
+curl -X GET /getAllLearners \
+  -H 'authorization: Bearer your_access_token' \
+```
+To retrieve all the learners of an entity
+```
+curl -X GET /getAllLearners/:entityID \
+  -H 'authorization: Bearer your_access_token' \
+```
+**Response example**
+```
+[
+	{
+		"learnerID": "1",
+		"entityID": "24",
+		"civility": "m",
+		"lastname": "Doe",
+		"firstname": "John",
+		"code" : "23563",
+		"jobTitle": "Communication officer",
+		"seniority": "3",
+		"level": "Master",
+		"contactEmail": ["email@email.fr"],
+		"phone": "+33600000000",
+		"filter": ["Session 1", "May 2018"],
+		"location": ["Paris"],
+		"country": ["France"]
+	},
+	...
+]
+```
 
 
 
