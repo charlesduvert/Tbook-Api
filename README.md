@@ -86,7 +86,7 @@ curl -X GET /getClient \
   -H 'authorization: Bearer your_access_token' \
 ```
 **Response example**
-```JSON
+```
 {
   "name":"Client Name",
   "logo":"path/logo.jpg",
@@ -104,6 +104,21 @@ Not yet available
 ```
 curl -X GET /getEntities \
   -H 'authorization: Bearer your_access_token' \
+```
+**Response example**
+```
+[
+	{
+		"entityID":"24",
+		"name":"Entity Name",
+		"description":"Nam ut risus a velit lobortis egestas convallis at dolor",
+		"address":"2 avenue Charles de Gaulle",
+		"city":"Paris",
+		"zip":"75008",
+		"language":"FR"
+	},
+	...
+]
 ```
 
 ### Get one Entity information ###
