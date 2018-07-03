@@ -180,6 +180,32 @@ curl -X GET /getAllLearners/:entityID \
 	...
 ]
 ```
-
+### Get one learner ###
+```
+curl -X GET /getOneLearner/:learnerID \
+  -H 'authorization: Bearer your_access_token' \
+```
+**Response example**
+```
+{
+	"learnerID": "1",
+	"entity": {
+		"entityID":"24",
+		"entityName":"Entity n°1"
+	},
+	"civility": "m",
+	"lastname": "Doe",
+	"firstname": "John",
+	"code" : "23563",
+	"jobTitle": "Communication officer",
+	"seniority": "3",
+	"level": "Master",
+	"contactEmail": ["email@email.fr"],
+	"phone": "+33600000000",
+	"filter": ["Session 1", "May 2018"],
+	"location": ["Paris"],
+	"country": ["France"]
+}
+```
 
 
