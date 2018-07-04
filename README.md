@@ -248,7 +248,7 @@ curl -X POST /insertLearner \
 | Name | Required | Type | Description |
 | - | - | - | - |
 | entityID | true | int | The ID of your entity. Refer to the [entity section](#client--entities) |
-| login | true | string | Login of your learner. E-mail format, has to be unique. |
+| login | true | string | Your learner's login. E-mail format, has to be unique. |
 | password | false | string | Automatically generated if left blank |
 | civility | true | string | Options are : `m` , `mme` |
 | lastname | true | string | Lastname |
@@ -263,3 +263,24 @@ curl -X POST /insertLearner \
 | location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
 | country[x] | false | string | Country |
 | testUser | false | int | Options are : `0` (false) , `1` (true) . If true, this user's data will not be taken into account in the global stats |
+
+
+## Users authentification
+
+```
+curl -X POST /authToken \
+  -H 'authorization: Bearer your_access_token' \
+  -F 'userType=1' \
+  -F 'connectionType=login' \
+  -F 'identifier=login2@api.fr' \
+  -F 'errorUrl=http://example.com/error' \
+```
+
+**Parameters**
+
+| Name | Required | Type | Description |
+| - | - | - | - |
+| userType | true | int | Options are : `1` (learner), `2` (teacher) |
+| connectionType | true | string | Options are : `login`, `id`. |
+| identifier | true | string | If connectionType == `login`, then enter the user's login (e-mail format). If connectionType == `id`,  then enter the ID attached to the user on your platform |
+| errorUrl | true | string | The redirection url if the request generated an error |
