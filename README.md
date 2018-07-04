@@ -271,8 +271,10 @@ curl -X POST /insertLearner \
 
 ## Users authentification
 
-We provide two types of user authentification : login & ID. 
+We provide two types of user authentification : login & ID.
+
 **Login** : the unique e-mail-formatted login, sent during the Insert User request. Note that this login can never be modified on our platform.
+
 **ID** : the externalID field optionnally sent during the Insert User request. The user's ID on your platform.
 
 
