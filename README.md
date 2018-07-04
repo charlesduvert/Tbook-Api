@@ -81,7 +81,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 	- [Get all entities](#get-all-entities)
 	- [Get one entity](#get-one-entity)
 	
-* [Learner](#learner)
+* [Learners](#learners)
 	- [Get all learners](#get-all-learners)
 	- [Get one learner](#get-one-learner)
 	- [Insert a learner](#insert-a-learner)
@@ -148,7 +148,7 @@ curl -X GET /getEntity/:entityID \
 	"language":"FR"
 }
 ```
-## Learner
+## Learners
 
 Learners are attached to one entity.
 
