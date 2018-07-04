@@ -79,6 +79,10 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 	[Create new entity](#create-new-entity)
 	[Get all entities](#get-all-entities)
 	[Get one entity](#get-one-entity)
+[Learner](#learner)
+	[Get all learners](#get-all-learners)
+	[Get one learner](#get-one-learner)
+	[Insert a learner](#insert-a-learner)
 
 ## Client & Entities
 
