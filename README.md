@@ -242,6 +242,7 @@ curl -X POST /insertLearner \
   -F 'testUser=0'
 ```
 **Parameters**
+
 | Name | Required | Type | Description |
 | - | - | - |
 | entityID | true | int | The ID of your entity. Refer to the [entity section](#client--entities) |
