@@ -302,3 +302,7 @@ curl -X POST /authToken \
 }
 ```
 
+Then, redirect the user to the `authentificationUrl`. He will be connected on the T-book platform. This link expires after 60 seconds.
+
+In the event of a problem, we will redirect the user to the `errorUrl`. 
+
