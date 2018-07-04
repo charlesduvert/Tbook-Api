@@ -291,5 +291,5 @@ curl -X POST /authToken \
 | - | - | - | - |
 | userType | true | int | Options are : `1` (learner), `2` (teacher) |
 | connectionType | true | string | Options are : `login`, `id`. |
-| identifier | true | string | If connectionType == `login`, then enter the user's login (e-mail format).\If connectionType == `id`,  then enter the ID attached to the user on your platform |
+| identifier | true | string | If connectionType == `login`, then enter the user's login (e-mail format). \ If connectionType == `id`,  then enter the ID attached to the user on your platform |
 | errorUrl | true | string | The redirection url if the request generated an error |
