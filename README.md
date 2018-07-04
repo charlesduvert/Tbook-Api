@@ -293,3 +293,12 @@ curl -X POST /authToken \
 | connectionType | true | string | Options are : `login`, `id`. |
 | identifier | true | string | If connectionType == `login`, then enter the user's login (e-mail format). If connectionType == `id`,  then enter the ID attached to the user on your platform |
 | errorUrl | true | string | The redirection url if the request generated an error |
+
+**Response example**
+```
+{
+	"success": "1",
+	"authentificationUrl" : "http://t-book.fr/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJiMDNiMmZjNDlhYTc1YjMzN2RhYzUwNTVhIiwiaWR0Ym9va19jbGllbnQiOiI3IiwiaWF0IjoxNTMwNjMxNzMyLCJleHAiOjE1MzA2MzUzMzJ9.WI8bgP--I3-5MAi1zm4HtBqedfJ5Tomta7lf0zMYCgU",
+}
+```
+
