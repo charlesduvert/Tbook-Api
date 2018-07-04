@@ -218,16 +218,16 @@ curl -X GET /getOneLearner/:learnerID \
 ```
 curl -X POST /insertLearner \
   -H 'authorization: Bearer your_access_token' \
-  -F entityID=24 \
-  -F login=login2@api.fr \
-  -F password=1F0k7h6g \
-  -F civility=mme \
-  -F lastname=Doe \
-  -F firstname=Jane \
-  -F code=23563 \
+  -F 'entityID=24' \
+  -F 'login=login2@api.fr' \
+  -F 'password=1F0k7h6g' \
+  -F 'civility=mme' \
+  -F 'lastname=Doe' \
+  -F 'firstname=Jane' \
+  -F 'code=23563' \
   -F 'jobTitle=Communication Manager' \
-  -F seniority=3 \
-  -F level=Master \
+  -F 'seniority=3' \
+  -F 'level=Master' \
   -F 'contactEmail[0]=contact@gmail.fr' \
   -F 'contactEmail[1]=contact2@gmail.fr' \
   -F 'phone=+33600000000' \
@@ -235,6 +235,24 @@ curl -X POST /insertLearner \
   -F 'filter[1]=May 2018' \
   -F 'location[0]=Paris' \
   -F 'country[0]=France' \
-  -F testUser=0
+  -F 'testUser=0'
 ```
-
+**Parameters**
+| Name | Required | Type | Description |
+| - | - | - |
+| entityID | true | int | The ID of your entity. Refer to the [entity section](#client--entities) |
+| login | true | string | Login of your learner. E-mail format, has to be unique. |
+| password | false | string | Automatically generated if left blank |
+| civility | true | string | Options are : `m` , `mme` |
+| lastname | true | string | Lastname |
+| firstname | true | string | Firstname |
+| code | false | string | Optionnal. Alpha-numeric code. |
+| jobTitle | false | string | Job title |
+| seniority | false | string | Seniority |
+| level | false | string | Degree level |
+| contactEmail[x] | false | string | Contact e-mail(s) |
+| phone | false | string | Phone number |
+| filter[x] | false | string | Filters can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| country[x] | false | string | Country |
+| testUser | false | int | Options are : `0` (false) , `1` (true) . If true, this user's data will not be taken into account in the global stats |
