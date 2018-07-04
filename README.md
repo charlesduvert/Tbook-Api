@@ -85,6 +85,8 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 	- [Get all learners](#get-all-learners)
 	- [Get one learner](#get-one-learner)
 	- [Insert a learner](#insert-a-learner)
+	
+* [Users authentification](#users-authentification)
 
 ## Client & Entities
 
@@ -242,6 +244,7 @@ curl -X POST /insertLearner \
   -F 'location[0]=Paris' \
   -F 'country[0]=France' \
   -F 'testUser=0'
+  -F 'externalID=23'
 ```
 **Parameters**
 
@@ -263,9 +266,15 @@ curl -X POST /insertLearner \
 | location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
 | country[x] | false | string | Country |
 | testUser | false | int | Options are : `0` (false) , `1` (true) . If true, this user's data will not be taken into account in the global stats |
+| externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 
 
 ## Users authentification
+
+We provide two types of user authentification : login & ID. 
+**Login** : the unique e-mail-formatted login, sent during the Insert User request. Note that this login can never be modified on our platform.
+**ID** : the externalID field optionnally sent during the Insert User request. The user's ID on your platform.
+
 
 ```
 curl -X POST /authToken \
