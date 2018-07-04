@@ -76,7 +76,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 ## Methods
 
 * [Client & Entities](#client--entities)
- - [Get client](#get-client)
+	- [Get client](#get-client)
  - [Create new entity](#create-new-entity)
  - [Get all entities](#get-all-entities)
  - [Get one entity](#get-one-entity)
