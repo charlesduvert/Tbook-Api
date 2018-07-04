@@ -244,7 +244,7 @@ curl -X POST /insertLearner \
 **Parameters**
 
 | Name | Required | Type | Description |
-| - | - | - |
+| - | - | - | - |
 | entityID | true | int | The ID of your entity. Refer to the [entity section](#client--entities) |
 | login | true | string | Login of your learner. E-mail format, has to be unique. |
 | password | false | string | Automatically generated if left blank |
