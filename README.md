@@ -1,6 +1,7 @@
 # T-book Web Service API
 
 Our Web Service API provides users with fast and reliable access to T-book data. You can use the T-book Web Service API to retrieve and manage T-book content.
+If you have any issue or request, please contact [Esther Lévy](mailto:esther.levy@le-co.fr)
 
 ## Getting Started
 
