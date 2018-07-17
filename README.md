@@ -246,8 +246,9 @@ curl -X POST /insertLearner \
   -F 'filter[1]=May 2018' \
   -F 'location[0]=Paris' \
   -F 'country[0]=France' \
-  -F 'testUser=0'
-  -F 'externalID=23'
+  -F 'testUser=0' \
+  -F 'externalID=23' \
+  -F 'assignation=0' \
 ```
 **Parameters**
 
@@ -269,8 +270,9 @@ curl -X POST /insertLearner \
 | filter[x] | false | string | Filters can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
 | location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
 | country[x] | false | string | Country |
-| testUser | false | int | Options are : `0` (false) , `1` (true) . If true, this user's data will not be taken into account in the global stats |
+| testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
+| assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
 
 
 ## Users authentification
