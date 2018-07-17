@@ -228,7 +228,8 @@ curl -X GET /getOneLearner/:learnerID \
 ```
 curl -X POST /insertLearner \
   -H 'authorization: Bearer your_access_token' \
-  -F 'entityID=24' \
+  -F 'entity[identifier]=24' \
+  -F 'entity[create]=true' \
   -F 'login=login2@api.fr' \
   -F 'password=1F0k7h6g' \
   -F 'civility=mme' \
@@ -252,7 +253,8 @@ curl -X POST /insertLearner \
 
 | Name | Required | Type | Description |
 | - | - | - | - |
-| entityID | true | int | The ID of your entity. Refer to the [entity section](#client--entities) |
+| entity[identifier] | true | int/string | The ID (int) or name (string) of the entity. Refer to the [entity section](#client--entities) |
+| entity[create] | false | int | Default : false. Options are : `0` (false) , `1` (true). If `entity[identifier]` is a string, and `entity[create]` is true, then the entity will be created if it doesn't exist. |
 | login | true | string | Your learner's login. E-mail format, has to be unique. |
 | password | false | string | Automatically generated if left blank |
 | civility | true | string | Options are : `m` , `mme` |
