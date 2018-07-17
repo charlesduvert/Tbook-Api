@@ -254,7 +254,7 @@ curl -X POST /insertLearner \
 | Name | Required | Type | Description |
 | - | - | - | - |
 | entity[identifier] | true | int/string | The ID (int) or name (string) of the entity. Refer to the [entity section](#client--entities) |
-| entity[create] | false | int | Default : false. Options are : `0` (false) , `1` (true). If `entity[identifier]` is a string, and `entity[create]` is true, then the entity will be created if it doesn't exist. |
+| entity[create] | false | int | Default : false. Options are : `0` (false) , `1` (true). If `entity[identifier]` is a string, and `entity[create]` is true, then the entity will be created when it doesn't exist. |
 | login | true | string | Your learner's login. E-mail format, has to be unique. |
 | password | false | string | Automatically generated if left blank |
 | civility | true | string | Options are : `m` , `mme` |
