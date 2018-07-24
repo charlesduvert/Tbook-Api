@@ -314,3 +314,67 @@ Then, redirect the user to the `authentificationUrl`. He will be connected to th
 
 In the event of a problem, we will redirect the user to the `errorUrl`. 
 
+
+
+## Learning Tools Interoperability - LTI
+You can use LTI as a SSO system. 
+To do so, you should send your data to a launch URL (as described below). If the user already exists, he will be connected seamlessly, else, he will be created on our platform and connected.
+
+**Registration settings**
+Launch URL : 
+  - [Test platform](https://test.t-book.fr/api/lti)
+  - [Live platform](https://t-book.fr/api/lti)
+Consumer key & Shared secret : please refer to the [Prerequisites section](#prerequisites). Warning : your `Shared Secret` is the one below the `Client Secret`, following the `For LTI` mention.
+
+
+**Custom parameters**
+You should add to the custom parameters field a json string, in a variable named `data`, as below. 
+
+| Name | Required | Type | Description |
+| - | - | - | - |
+| entityID | true | int | The ID of the entity. Refer to the [entity section](#client--entities) |
+| connectionType | true | string | Options are : `login` or `id` (we will use the externalID)  |
+| login | true | string | Your learner's login. E-mail format, has to be unique. |
+| externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
+| password | false | string | Automatically generated if left blank |
+| civility | true | string | Options are : `m` , `mme` |
+| lastname | true | string | Lastname |
+| firstname | true | string | Firstname |
+| code | false | string | Optionnal. Alpha-numeric code. |
+| jobTitle | false | string | Job title |
+| seniority | false | string | Seniority |
+| level | false | string | Degree level |
+| contactEmail | false | string | Contact e-mail(s) |
+| phone | false | string | Phone number |
+| filter | false | string | Filters can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| location | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| country | false | string | Country |
+| testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
+| assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
+
+**Custom parameters example**
+
+```
+data = 
+{
+	"entityID":"24",
+	"connectionType": "id",
+	"login": "john.doe@gmail.com",
+	"externalID": "2390",
+	"password": "#thepass#",
+	"civility": "m",
+	"lastname": "Doe",
+	"firstname": "John",
+	"code" : "23563",
+	"jobTitle": "Communication officer",
+	"seniority": "3",
+	"level": "Master",
+	"contactEmail": ["email@email.fr","email2@email.fr"],
+	"phone": "+33600000000",
+	"filter": ["Session 1", "May 2018"],
+	"location": ["Paris"],
+	"country": ["France"],
+	"testUser":0,
+	"assignation":1,
+}
+```
