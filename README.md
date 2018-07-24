@@ -379,6 +379,6 @@ data =
 	"location": ["Paris"],
 	"country": ["France"],
 	"testUser":0,
-	"assignation":1,
+	"assignation":1
 }
 ```
