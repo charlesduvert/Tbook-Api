@@ -320,14 +320,14 @@ In the event of a problem, we will redirect the user to the `errorUrl`.
 You can use LTI as a SSO system. 
 To do so, you should send your data to a launch URL (as described below). If the user already exists, he will be connected seamlessly, else, he will be created on our platform and connected.
 
-**Registration settings**
-Launch URL : 
+### Registration settings ###
+**Launch URL : **
   - [Test platform](https://test.t-book.fr/api/lti)
   - [Live platform](https://t-book.fr/api/lti)
 Consumer key & Shared secret : please refer to the [Prerequisites section](#prerequisites). Warning : your `Shared Secret` is the one below the `Client Secret`, following the `For LTI` mention.
 
 
-**Custom parameters**
+### Custom parameters ###
 You should add to the custom parameters field a json string, in a variable named `data`, as below. 
 
 | Name | Required | Type | Description |
@@ -352,7 +352,8 @@ You should add to the custom parameters field a json string, in a variable named
 | testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
 
-**Custom parameters example**
+
+### Custom parameters example ###
 
 ```
 data = 
