@@ -325,7 +325,9 @@ To do so, you should send your data to a launch URL (as described below). If the
   - [Test platform](https://test.t-book.fr/api/lti)
   - [Live platform](https://t-book.fr/api/lti)
   
-**Consumer key & Shared secret** : please refer to the [Prerequisites section](#prerequisites). Warning : your `Shared Secret` is the one below the `Client Secret`, following the `For LTI` mention.
+**Consumer key & Shared secret** : please refer to the [Prerequisites section](#prerequisites). 
+
+Warning : your `Shared Secret` is the one below the `Client Secret`, following the `For LTI` mention.
 
 
 ### Custom parameters ###
