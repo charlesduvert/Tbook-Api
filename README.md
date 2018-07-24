@@ -46,7 +46,7 @@ A successful token response may look like the following
 {
   "access_token":"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3",
   "token_type":"bearer",
-  "expires_in":3600,
+  "expires_in":3600
 }
 ```
 ## Error codes
