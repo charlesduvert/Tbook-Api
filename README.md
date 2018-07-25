@@ -320,7 +320,7 @@ In the event of a problem, we will redirect the user to the `errorUrl`.
 You can use LTI as a SSO system. 
 To do so, you should send your data to a launch URL (as described below). If the user already exists, he will be connected seamlessly, else, he will be created on our platform and connected.
 
-**N.B. :** We do not use the `Ressource ID field`, as we use LTI to access a platform and not a particular context.
+**N.B. :** We do not use the `Ressource ID` field, as we use LTI to access a platform and not a particular context.
 
 ### Registration settings ###
 **Launch URL :**
@@ -359,7 +359,7 @@ You should add to the custom parameters field a json string, in a variable named
 
 
 ### Custom parameters example ###
-Please minimify your json
+Please minify your json
 
 ```
 data = 
