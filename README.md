@@ -333,7 +333,7 @@ Warning : your `Shared Secret` is the one below the `Client Secret`, following t
 
 
 ### Custom parameters ###
-You should add to the custom parameters field a json string, in a variable named `data`, as below. 
+You should add to the custom parameters field a json string, in a variable named `custom_data`, as below. 
 
 | Name | Required | Type | Description |
 | - | - | - | - |
