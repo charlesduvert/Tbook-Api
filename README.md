@@ -385,3 +385,7 @@ data =
 	"assignation":1
 }
 ```
+
+
+### Debug option ###
+If you need a debug option for your tests, you can associate the value `1` to the `custom_debug` field. We will display your request.
