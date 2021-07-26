@@ -87,7 +87,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 	- [Get all learners](#get-all-learners)
 	- [Get one learner](#get-one-learner)
 	- [Insert a learner](#insert-a-learner)
-	- [Remove a learner from Session](#remove-learner-session)
+	- [Remove a learner from Session](#remove-a-learner-from-session)
 	
 * [Users authentification](#users-authentification)
 
