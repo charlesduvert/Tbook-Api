@@ -302,7 +302,7 @@ curl -X POST /updateLearner \
   -F 'assignation=0' \
 ```
 **Parameters**
-All parameters are optional. We will only update the parameters that are provided.
+All parameters are optional. We will only update the parameters that are posted.
 
 | Name | Required | Type | Description |
 | - | - | - | - |
