@@ -274,9 +274,10 @@ curl -X POST /insertLearner \
 | testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
-```
-### Insert a learner ###
-```
+
+
+### Remove a learner from Session ###
+
 
 
 ## Users authentification
