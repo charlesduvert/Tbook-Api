@@ -302,7 +302,9 @@ curl -X POST /updateLearner \
   -F 'assignation=0' \
 ```
 **Parameters**
+
 All parameters are optional. We will only update the parameters that are posted.
+`filter[x]`, `location[x]` and `country[x]` will be added to the learner's existing Filters and Locations
 
 | Name | Required | Type | Description |
 | - | - | - | - |
@@ -318,9 +320,9 @@ All parameters are optional. We will only update the parameters that are posted.
 | level | false | string | Degree level |
 | contactEmail[x] | false | string | Contact e-mail(s) |
 | phone | false | string | Phone number |
-| filter[x] | false | string | Filters can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
-| location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
-| country[x] | false | string | Country |
+| filter[x] | false | string | Filters can help you attach a learner to a session. It will be added to the learner's existing Filters.  Refer to the [Session section](#sessions) |
+| location[x] | false | string | Locations can help you attach a learner to a session. It will be added to the learner's existing Locations.  Refer to the [Session section](#sessions) |
+| country[x] | false | string | It will be added to the learner's existing Country. |
 | testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
