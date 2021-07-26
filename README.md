@@ -275,9 +275,23 @@ curl -X POST /insertLearner \
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
 
-
 ### Remove a learner from Session ###
+```
+curl -X POST /removeLearnerSession \
+  -H 'authorization: Bearer your_access_token' \
+  -F 'identifierType=email' \
+  -F 'identifier=login2@api.fr' \
+  -F 'filter=Session 1' \
+  -F 'location=Paris' \
+```
+**Parameters**
 
+| Name | Required | Type | Description |
+| - | - | - | - |
+| identifierType | true | string | Default : email. Options are : `email`, `learnerId`, `externalId`. `learnerId` and `externalId` are integers. `learnerId` is teh learner's id on our application and `externalId` is a parameter that was added when the learner was created (Refer to the [Insert a learner](#insert-a-learner)). |
+| identifier | true | string | Your learner's identifier, depends on `identifierType`. |
+| filter | true | string | The filter of the session that the learner should be removed from. Refer to the [Session section](#sessions) |
+| location | true | string | The location of the session that the learner should be removed from. Refer to the [Session section](#sessions) |
 
 
 ## Users authentification
