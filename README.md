@@ -87,6 +87,7 @@ Our API uses conventional HTTP response codes to indicate the success or failure
 	- [Get all learners](#get-all-learners)
 	- [Get one learner](#get-one-learner)
 	- [Insert a learner](#insert-a-learner)
+	- [Update learner informations](#update-learner-informations)
 	- [Remove a learner from Session](#remove-a-learner-from-session)
 	
 * [Users authentification](#users-authentification)
@@ -274,6 +275,56 @@ curl -X POST /insertLearner \
 | testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
+
+### Update learner informations ###
+```
+curl -X POST /updateLearner \
+  -H 'authorization: Bearer your_access_token' \
+  -F 'identifierType=email' \
+  -F 'identifier=login2@api.fr' \
+  -F 'password=1F0k7h6g' \
+  -F 'civility=mme' \
+  -F 'lastname=Doe' \
+  -F 'firstname=Jane' \
+  -F 'code=23563' \
+  -F 'jobTitle=Communication Manager' \
+  -F 'seniority=3' \
+  -F 'level=Master' \
+  -F 'contactEmail[0]=contact@gmail.fr' \
+  -F 'contactEmail[1]=contact2@gmail.fr' \
+  -F 'phone=+33600000000' \
+  -F 'filter[0]=Session 1' \
+  -F 'filter[1]=May 2018' \
+  -F 'location[0]=Paris' \
+  -F 'country[0]=France' \
+  -F 'testUser=0' \
+  -F 'externalID=23' \
+  -F 'assignation=0' \
+```
+**Parameters**
+All parameters are optional. We will only update the parameters that are provided.
+
+| Name | Required | Type | Description |
+| - | - | - | - |
+| identifierType | true | string | Default : email. Options are : `email`, `learnerId`, `externalId`. `learnerId` and `externalId` are integers. `learnerId` is teh learner's id on our application and `externalId` is a parameter that was added when the learner was created (Refer to the [Insert a learner](#insert-a-learner)). |
+| identifier | true | string | Your learner's identifier, depends on `identifierType`. |
+| password | false | string | Password |
+| civility | false | string | Options are : `m` , `mme` |
+| lastname | false | string | Lastname |
+| firstname | false | string | Firstname |
+| code | false | string | Optionnal. Alpha-numeric code. |
+| jobTitle | false | string | Job title |
+| seniority | false | string | Seniority |
+| level | false | string | Degree level |
+| contactEmail[x] | false | string | Contact e-mail(s) |
+| phone | false | string | Phone number |
+| filter[x] | false | string | Filters can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| location[x] | false | string | Locations can help you attach a learner to a session.  Refer to the [Session section](#sessions) |
+| country[x] | false | string | Country |
+| testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
+| externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
+| assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
+
 
 ### Remove a learner from Session ###
 ```
