@@ -198,10 +198,19 @@ curl -X GET /getAllLearners/:entityID \
 ]
 ```
 ### Get one learner ###
+You have two different ways to get a learner information. The easiest way is the first one, a GET request where you only have to pass our learner's ID :
 ```
 curl -X GET /getOneLearner/:learnerID \
   -H 'authorization: Bearer your_access_token' \
 ```
+
+You can also use a POST request, that enables you to select a learner with 3 different options (`email`, `learnerId`, `externalId`) :
+```
+curl -X POST /getOneLearner \
+  -F 'identifierType=email' \
+  -F 'identifier=login2@api.fr' \
+```
+
 **Response example**
 ```
 {
