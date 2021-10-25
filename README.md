@@ -260,6 +260,7 @@ curl -X POST /insertLearner \
   -F 'testUser=0' \
   -F 'externalID=23' \
   -F 'assignation=0' \
+  -F 'sendingConnectionEmail=0' \
 ```
 **Parameters**
 
@@ -284,6 +285,7 @@ curl -X POST /insertLearner \
 | testUser | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If true, this user's data will not be taken into account in the global stats |
 | externalID | false | int | The user's ID on your platform. Required if you want to connect your user using the ID option. |
 | assignation | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will automatically be assigned to the course(s) corresponding the the learner's filter(s) and location(s). |
+| sendingConnectionEmail | false | int | Default : `0`. Options are : `0` (false) , `1` (true). If set to `1`, the learner, once created, will receive his login details (e-mail & password) by e-mail. |
 
 ### Update learner informations ###
 ```
